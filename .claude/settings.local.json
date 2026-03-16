@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx puppeteer@latest screenshot --help)",
+      "Bash(node -e \":*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.asktheoctopus.com)",
+      "Bash(node screenshot.js)"
+    ]
+  }
+}

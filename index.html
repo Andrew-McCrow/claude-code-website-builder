@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octopus AI - Multiply Your Workforce</title>
+    <link rel="icon" type="image/png" href="Logo - Primary Accent.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#0d1b2a",
+              accent: "#7fd8be",
+              slate: "#475569",
+              coral: "#ff6b6b",
+              warm: "#fafaf8",
+              midnight: "#1b263b",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ['"Open Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        background: #fafaf8;
+        color: #0d1b2a;
+      }
+      .font-display {
+        font-family: "Open Sans", sans-serif;
+      }
+      .font-quote {
+        font-family: Georgia, serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- ── NAVIGATION ── -->
+    <nav
+      class="bg-navy sticky top-0 z-50 px-8 py-4 flex items-center justify-between"
+    >
+      <a
+        href="#hero"
+        class="flex items-center gap-3 hover:opacity-90 transition"
+      >
+        <img
+          src="Logo - Primary Accent.png"
+          alt="Octopus AI"
+          class="h-9 w-9 object-contain"
+        />
+        <span class="font-display font-bold text-white text-lg tracking-tight"
+          >Octopus AI</span
+        >
+      </a>
+      <div class="flex items-center gap-7">
+        <a
+          href="#what"
+          class="text-white/70 hover:text-white text-sm font-medium transition"
+          >What</a
+        >
+        <a
+          href="#how"
+          class="text-white/70 hover:text-white text-sm font-medium transition"
+          >How</a
+        >
+        <a
+          href="#results"
+          class="text-white/70 hover:text-white text-sm font-medium transition"
+          >Results</a
+        >
+        <a
+          href="#contact"
+          class="bg-accent text-navy text-sm font-semibold px-5 py-2 rounded-full hover:bg-accent/90 transition"
+          >Book Call</a
+        >
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section
+      id="hero"
+      class="bg-navy relative overflow-hidden"
+      style="min-height: 640px"
+    >
+      <!-- subtle grid overlay -->
+      <div
+        class="absolute inset-0 opacity-5"
+        style="
+          background-image:
+            linear-gradient(#7fd8be 1px, transparent 1px),
+            linear-gradient(90deg, #7fd8be 1px, transparent 1px);
+          background-size: 48px 48px;
+        "
+      ></div>
+      <div
+        class="relative z-10 max-w-5xl mx-auto px-8 flex flex-col justify-center"
+        style="min-height: 640px"
+      >
+        <h1
+          class="font-display font-bold text-white leading-tight mb-6"
+          style="font-size: 42px"
+        >
+          AI Automation For<br />
+          <span class="text-accent">Your Business.</span>
+        </h1>
+        <p
+          class="text-white/60 mb-10 leading-relaxed max-w-xl"
+          style="font-size: 16px"
+        >
+          Custom AI systems that eliminate repetitive work, cut costs, and boost
+          output.
+        </p>
+        <div class="flex gap-4">
+          <a
+            href="#contact"
+            class="bg-accent text-navy font-semibold px-7 py-3.5 rounded-full hover:bg-accent/90 transition"
+            style="font-size: 16px"
+            >Book Call</a
+          >
+        </div>
+
+        <!-- floating metric cards -->
+        <div class="flex gap-4 mt-16">
+          <div
+            class="bg-midnight border border-accent/20 rounded-2xl px-6 py-5"
+          >
+            <div
+              class="text-accent font-display font-bold mb-1"
+              style="font-size: 28px"
+            >
+              10×
+            </div>
+            <div class="text-white/50" style="font-size: 14px">
+              Operational capacity
+            </div>
+          </div>
+          <div
+            class="bg-midnight border border-accent/20 rounded-2xl px-6 py-5"
+          >
+            <div
+              class="text-accent font-display font-bold mb-1"
+              style="font-size: 28px"
+            >
+              40%
+            </div>
+            <div class="text-white/50" style="font-size: 14px">
+              Overhead reduction
+            </div>
+          </div>
+          <div
+            class="bg-midnight border border-accent/20 rounded-2xl px-6 py-5"
+          >
+            <div
+              class="text-accent font-display font-bold mb-1"
+              style="font-size: 28px"
+            >
+              2 wks
+            </div>
+            <div class="text-white/50" style="font-size: 14px">
+              To first automation
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHAT WE BUILD ── -->
+    <section id="what" class="py-24 bg-warm">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="mb-14">
+          <p
+            class="text-accent font-semibold mb-3"
+            style="font-size: 20px; font-family: Inter, sans-serif"
+          >
+            What We Build
+          </p>
+          <h2
+            class="font-display font-semibold text-navy mb-4"
+            style="font-size: 32px"
+          >
+            Practical AI systems that fit the way your team already works.
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white border border-navy/10 rounded-2xl p-8 hover:border-accent/40 transition group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-6"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3L3 8v8l9 5 9-5V8l-9-5z"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 8l9 5m0 0l9-5m-9 5v9"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="font-display font-semibold text-navy mb-3"
+              style="font-size: 24px"
+            >
+              Workflow Automation
+            </h3>
+            <p class="text-slate leading-relaxed" style="font-size: 16px">
+              Connect your tools, remove handoffs, and automate the repetitive
+              work that slows your team down.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white border border-navy/10 rounded-2xl p-8 hover:border-accent/40 transition group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-6"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="4"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                />
+                <path
+                  d="M4 20c0-4 3.6-7 8-7s8 3 8 7"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="font-display font-semibold text-navy mb-3"
+              style="font-size: 24px"
+            >
+              AI Agents
+            </h3>
+            <p class="text-slate leading-relaxed" style="font-size: 16px">
+              Think of them as AI teammates: they handle routine work start to
+              finish, then bring in your team when a real decision is needed.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white border border-navy/10 rounded-2xl p-8 hover:border-accent/40 transition group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-6"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect
+                  x="3"
+                  y="3"
+                  width="7"
+                  height="7"
+                  rx="1.5"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                />
+                <rect
+                  x="14"
+                  y="3"
+                  width="7"
+                  height="7"
+                  rx="1.5"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                />
+                <rect
+                  x="3"
+                  y="14"
+                  width="7"
+                  height="7"
+                  rx="1.5"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                />
+                <rect
+                  x="14"
+                  y="14"
+                  width="7"
+                  height="7"
+                  rx="1.5"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3
+              class="font-display font-semibold text-navy mb-3"
+              style="font-size: 24px"
+            >
+              Custom AI Integrations
+            </h3>
+            <p class="text-slate leading-relaxed" style="font-size: 16px">
+              Plug AI into the platforms you already use and shape each workflow
+              around how your business actually runs.
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white border border-navy/10 rounded-2xl p-8 hover:border-accent/40 transition group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-6"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                  stroke="#7fd8be"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="font-display font-semibold text-navy mb-3"
+              style="font-size: 24px"
+            >
+              Enterprise Grade
+            </h3>
+            <p class="text-slate leading-relaxed" style="font-size: 16px">
+              Built for scale from day one, with strong security, clear
+              permissions, and reliability your team can trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section id="how" class="py-24 bg-midnight">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="mb-16">
+          <p
+            class="text-accent font-semibold mb-3"
+            style="font-size: 20px; font-family: Inter, sans-serif"
+          >
+            How It Works
+          </p>
+          <h2
+            class="font-display font-semibold text-white"
+            style="font-size: 32px"
+          >
+            Live in days, not months
+          </h2>
+        </div>
+
+        <!-- Circles + connectors row -->
+        <div class="flex items-center mb-10">
+          <div
+            class="w-11 h-11 rounded-full border-2 border-accent bg-midnight flex items-center justify-center flex-none"
+          >
+            <span class="text-accent font-bold" style="font-size: 15px">1</span>
+          </div>
+          <div class="flex-1 h-px bg-accent/30"></div>
+          <div
+            class="w-11 h-11 rounded-full border-2 border-accent bg-midnight flex items-center justify-center flex-none"
+          >
+            <span class="text-accent font-bold" style="font-size: 15px">2</span>
+          </div>
+          <div class="flex-1 h-px bg-accent/30"></div>
+          <div
+            class="w-11 h-11 rounded-full border-2 border-accent bg-midnight flex items-center justify-center flex-none"
+          >
+            <span class="text-accent font-bold" style="font-size: 15px">3</span>
+          </div>
+          <div class="flex-1 h-px bg-accent/30"></div>
+          <div
+            class="w-11 h-11 rounded-full border-2 border-accent bg-accent flex items-center justify-center flex-none"
+          >
+            <span class="text-navy font-bold" style="font-size: 15px">4</span>
+          </div>
+        </div>
+
+        <!-- Text row aligned under each circle -->
+        <div class="grid grid-cols-4 gap-8">
+          <div>
+            <h3 class="font-semibold text-white mb-2" style="font-size: 16px">
+              Strategy Call &amp; Audit
+            </h3>
+            <p class="text-white/50 leading-relaxed" style="font-size: 14px">
+              We map your biggest bottlenecks and identify automation
+              opportunities.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-2" style="font-size: 16px">
+              Custom System Design
+            </h3>
+            <p class="text-white/50 leading-relaxed" style="font-size: 14px">
+              A tailored blueprint built around your tools, team, and workflows.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-2" style="font-size: 16px">
+              Build, Test &amp; Deploy
+            </h3>
+            <p class="text-white/50 leading-relaxed" style="font-size: 14px">
+              We build, QA, and ship your automation — fast.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-2" style="font-size: 16px">
+              Iterate &amp; Scale
+            </h3>
+            <p class="text-white/50 leading-relaxed" style="font-size: 14px">
+              We refine and expand as your needs evolve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESULTS ── -->
+    <section id="results" class="py-24 bg-warm">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="mb-16 text-center">
+          <p
+            class="text-accent font-semibold mb-3"
+            style="font-size: 20px; font-family: Inter, sans-serif"
+          >
+            Results
+          </p>
+          <h2
+            class="font-display font-semibold text-navy"
+            style="font-size: 32px"
+          >
+            Real impact. Measurable returns.
+          </h2>
+        </div>
+
+        <!-- Key metrics -->
+        <div class="grid grid-cols-3 gap-6 mb-16">
+          <div class="bg-navy rounded-2xl p-8 text-center">
+            <div
+              class="text-accent font-display font-bold mb-2"
+              style="font-size: 42px"
+            >
+              10×
+            </div>
+            <div class="text-white/70 leading-snug" style="font-size: 16px">
+              Operational capacity increase within 60 days
+            </div>
+          </div>
+          <div class="bg-navy rounded-2xl p-8 text-center">
+            <div
+              class="text-accent font-display font-bold mb-2"
+              style="font-size: 42px"
+            >
+              40%
+            </div>
+            <div class="text-white/70 leading-snug" style="font-size: 16px">
+              Average reduction in operational overhead
+            </div>
+          </div>
+          <div class="bg-navy rounded-2xl p-8 text-center">
+            <div
+              class="text-accent font-display font-bold mb-2"
+              style="font-size: 42px"
+            >
+              2 wks
+            </div>
+            <div class="text-white/70 leading-snug" style="font-size: 16px">
+              Strategy call to first live automation
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white border border-navy/10 rounded-2xl p-8">
+            <p
+              class="font-quote text-navy/80 mb-6 leading-relaxed"
+              style="font-size: 16px"
+            >
+              "The system Octopus AI built completely transformed our outreach.
+              We went from 200 manual emails a week to 2,000 personalised
+              sequences — and reply rates went up."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-accent font-display font-bold text-sm"
+                  >SK</span
+                >
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-navy"
+                  style="font-size: 14px; font-family: Inter, sans-serif"
+                >
+                  Sarah K.
+                </div>
+                <div class="text-slate" style="font-size: 14px">
+                  Head of Growth, Series A SaaS
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white border border-navy/10 rounded-2xl p-8">
+            <p
+              class="font-quote text-navy/80 mb-6 leading-relaxed"
+              style="font-size: 16px"
+            >
+              "The ROI was undeniable within the first month. They built exactly
+              what we needed — nothing bloated, nothing unnecessary."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-accent font-display font-bold text-sm"
+                  >JT</span
+                >
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-navy"
+                  style="font-size: 14px; font-family: Inter, sans-serif"
+                >
+                  James T.
+                </div>
+                <div class="text-slate" style="font-size: 14px">
+                  Founder, Boutique Consulting
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-white border border-navy/10 rounded-2xl p-8">
+            <p
+              class="font-quote text-navy/80 mb-6 leading-relaxed"
+              style="font-size: 16px"
+            >
+              "We were drowning in applications. Their AI screening flow handled
+              first-round interviews, scored candidates consistently, and booked
+              the right people straight into our calendar."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-accent font-display font-bold text-sm"
+                  >NR</span
+                >
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-navy"
+                  style="font-size: 14px; font-family: Inter, sans-serif"
+                >
+                  Nina R.
+                </div>
+                <div class="text-slate" style="font-size: 14px">
+                  Talent Acquisition Lead, Multi-Site Hospitality Group
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="bg-white border border-navy/10 rounded-2xl p-8">
+            <p
+              class="font-quote text-navy/80 mb-6 leading-relaxed"
+              style="font-size: 16px"
+            >
+              "Our residents now get instant answers 24/7. The AI handles
+              routine questions, maintenance triage, and update requests, so our
+              team can focus on complex tenant issues."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0"
+              >
+                <span class="text-accent font-display font-bold text-sm"
+                  >MD</span
+                >
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-navy"
+                  style="font-size: 14px; font-family: Inter, sans-serif"
+                >
+                  Mark D.
+                </div>
+                <div class="text-slate" style="font-size: 14px">
+                  Operations Manager, Regional Property Management Firm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section id="contact" class="py-24 bg-accent">
+      <div class="max-w-3xl mx-auto px-8 text-center">
+        <h2
+          class="font-display font-bold text-navy mb-4"
+          style="font-size: 36px"
+        >
+          Ready to work smarter?
+        </h2>
+        <a
+          href="#"
+          class="inline-block bg-navy text-white font-semibold px-10 py-4 rounded-full hover:bg-midnight transition"
+          style="font-size: 16px"
+          >Book Call</a
+        >
+        <p class="text-navy/50 mt-5" style="font-size: 14px">
+          No commitment. No sales pressure.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="bg-navy py-12">
+      <div class="max-w-5xl mx-auto px-8 flex items-center justify-between">
+        <a
+          href="#hero"
+          class="flex items-center gap-3 hover:opacity-80 transition"
+        >
+          <img
+            src="Logo - Primary Accent.png"
+            alt="Octopus AI"
+            class="h-8 w-8 object-contain"
+          />
+          <span class="font-display font-bold text-white text-base"
+            >Octopus AI</span
+          >
+        </a>
+        <p class="text-white/30" style="font-size: 14px">
+          © 2026 Octopus AI. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
